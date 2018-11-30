@@ -1,0 +1,55 @@
+1) __init__.py -> if you create the python package this file will create. The instructions inside __init__.py will get
+execute at the time of python package import
+
+2) class method
+   a) @classmethod
+   b) 1st argument of method -> cls
+   c) only access class variable
+   d) class variable -> define a variable inside a class and outside of method
+   e) can not access instance variable
+
+3) static method
+   a) @staticmethod
+   b) neither self or nor cls in argument
+   c) kind of utility method
+
+4) DOCSTRING
+   a) comment in other language
+   b) """ <docstring> """
+
+5) Any .py file called module. we can import file
+   if file name -> student_info.py then we can import as
+   import student_info
+
+
+   To get help of module -> help(student_info)
+
+   Print doc string -> print student_info.__doc__
+   Print Module name -> print student_info.__name__
+
+
+   if you print __name__ inside python file then it will print __main__ (only if executed python directly)
+
+   Any variable begin with __ and ends with __ then it will treat as python global variable
+
+   scope of variable which are declared inside method is local to method by default
+
+6) Module types
+   a) system defined -> example: sys, os, math etc
+   b) User defined
+
+7) global is a keyword in python which is used inside function to declare variable as global
+
+8) alias to module
+   import student_info as s
+
+9) if you want to import particular functionality instead of whole module. you can do with the following
+   from student_info import * -> will import whole module
+   from student_info import display_student_info -> only import display_student_info function
+
+10) if you don't specify object while defining your own class, by default object class inherited to your class
+11) tuple -> in side () -> immutable, can not change (number, string, tuple)
+12) list -> inside [] -> mutable, can change (list, dictionary, set)
+13) while import module, it will search current path then python default directory
+14) type(X) -> return the type of x
+15)
